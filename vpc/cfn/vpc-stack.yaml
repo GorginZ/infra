@@ -560,11 +560,11 @@ Resources:
         - IpProtocol: tcp
           FromPort: 80
           ToPort: 443
-          CidrIp: "203.34.100.0/24"
+          CidrIp: "ip.that.i.like/24"
         - IpProtocol: tcp
           FromPort: 80
           ToPort: 443
-          CidrIp: "49.255.41.116/30"
+          CidrIp: "ip.that.i.like/24"
 
   LaunchConfigSecurityGroup:
     Type: AWS::EC2::SecurityGroup
