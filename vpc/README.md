@@ -1,5 +1,16 @@
 BASIC VPC AND NETWORKING
 
+assumptions for using this quick big VPC with networking and hosting infra stack:
+
+There is manual work involved with anything involving certs and secret management/ params so ->
+
+- I have set up the appropriate values in param store (*the ones that the scripts are calling*)
+
+- have a domain or access to an aws:
+- hosted zone
+- validated ssl cert (with a CNAME record ALREADY EXISTING in the hosted zone associated with the domain in use)
+
+
 this dir includes
 
 VPC
@@ -16,9 +27,15 @@ I am trying to engineer this so that no traffic comes IN to my private subnets d
 
 probably for the SSM agent I should bake that into the image
 
+SGs for: ASG, also one for the VPC endpoints.
+
 AUTOSCALING GROUP
 
 TARGET GROUP
+
+ALB
+
+Listeners -> http -> https  -> target group
 
 SCALING RULES (that will need to be tuned to use case)
 
