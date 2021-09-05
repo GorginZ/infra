@@ -1,4 +1,4 @@
-BASIC VPC AND NETWORKING
+BASIC VPC AND NETWORKING ASG HTTPS LISTENERS AND COMPUTE INSTANCES THE LOT FINE TUNE AS NEEDED
 
 assumptions for using this quick big VPC with networking and hosting infra stack:
 
